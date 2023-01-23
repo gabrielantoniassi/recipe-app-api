@@ -43,4 +43,5 @@ class UserAdmin(BaseUserAdmin):
     )
 
 
-admin.site.register(models.User, UserAdmin)
+admin.site.register(models.User, UserAdmin) # Enable the app
+admin.site.register(models.Recipe)  # Enable the app
