@@ -12,7 +12,8 @@ from recipe import views
 
 
 router = DefaultRouter()
-router.register('recipes', views.RecipeViewSet) # Create endpoint for each method
+router.register('recipes', views.RecipeViewSet) # Create endpoint for each method of recipe app
+router.register('tags', views.TagViewSet)       # Create endpoint for each method of tags app
 
 app_name = 'recipe'
 
